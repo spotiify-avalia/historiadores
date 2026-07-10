@@ -163,7 +163,10 @@ p { color: var(--text-muted); margin-bottom: 24px; }
 
 /* Hero Section */
 .hero {
-    padding: 60px 0 80px;
+    padding: 40px 0 60px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
     background: radial-gradient(circle at top right, #ffffff 0%, var(--light-bg) 100%);
     overflow: hidden;
 }
@@ -481,7 +484,7 @@ footer {
 /* Animações On Scroll */
 .animate-up {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
     transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .animate-up.visible {
@@ -506,6 +509,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .hero { min-height: 100vh; padding: 20px 0; justify-content: center; }
+    .hero-title { order: 2; font-size: 1.8rem; margin-top: 16px; }
+    .hero-image { order: 1; margin-top: 0 !important; width: 100%; max-width: 320px; }
+    .badge { order: 0; margin-bottom: 16px; }
+    .hero-support { order: 3; font-size: 1rem; margin-top: 16px; }
+    .hero-bullets { order: 4; margin-top: 24px; margin-bottom: 24px; }
+    .btn-pulse { order: 5; width: 100%; }
+    
+    section { padding: 50px 0; }
+    .grid-2, .grid-3 { gap: 24px; }
+
     h1 { font-size: 2rem; }
     h2 { font-size: 1.75rem; }
     .grid-2, .grid-3 { grid-template-columns: 1fr; }
@@ -648,7 +663,25 @@ footer {
 .link-recusa:hover { color: var(--text-main); }
 
 @media (max-width: 768px) {
+
+    .hero { min-height: 100vh; padding: 20px 0; justify-content: center; }
+    .hero-title { order: 2; font-size: 1.8rem; margin-top: 16px; }
+    .hero-image { order: 1; margin-top: 0 !important; width: 100%; max-width: 320px; }
+    .badge { order: 0; margin-bottom: 16px; }
+    .hero-support { order: 3; font-size: 1rem; margin-top: 16px; }
+    .hero-bullets { order: 4; margin-top: 24px; margin-bottom: 24px; }
+    .btn-pulse { order: 5; width: 100%; }
+    
+    section { padding: 50px 0; }
+    .grid-2, .grid-3 { gap: 24px; }
+
     .modal-grid { grid-template-columns: 1fr; }
     .modal-content { padding: 32px 24px; }
     .modal-image img { max-width: 200px; margin: 0 auto; display: block; }
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
