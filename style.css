@@ -445,6 +445,16 @@ footer {
     color: #94A3B8;
     padding: 60px 0;
 }
+.footer-logo-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .footer-logo {
     font-size: 2rem;
     font-weight: 900;
