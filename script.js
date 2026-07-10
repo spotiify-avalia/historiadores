@@ -58,4 +58,40 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.animate-up').forEach(el => {
         observer.observe(el);
     });
+
+    // Modal Logic
+    const modal = document.getElementById('ofertaModal');
+    const openBtn = document.getElementById('openModalBtn');
+    const closeBtn = document.querySelector('.close-modal');
+    const continueBasicBtn = document.getElementById('continueBasicBtn');
+
+    if (openBtn && modal) {
+        openBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('active');
+        });
+
+        const closeModal = (e) => {
+            if (e) e.preventDefault();
+            modal.classList.remove('active');
+        };
+
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        if (continueBasicBtn) continueBasicBtn.addEventListener('click', closeModal);
+
+        // Close on outside click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    }
+
+    // Set Current Date dynamically
+    const dateElements = document.querySelectorAll('.current-date');
+    if (dateElements.length > 0) {
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString('pt-BR');
+        dateElements.forEach(el => el.textContent = formattedDate);
+    }
 });

@@ -171,7 +171,7 @@
                         <li><i class="ph-fill ph-check-circle text-blue"></i> Atualização por 3 meses</li>
                         <li><i class="ph-fill ph-check-circle text-blue"></i> Acesso imediato</li>
                     </ul>
-                    <a href="#" class="btn btn-outline">QUERO APENAS O MATERIAL DE TEÓRICOS</a>
+                    <a href="#" id="openModalBtn" class="btn btn-outline">QUERO APENAS O MATERIAL DE TEÓRICOS</a>
                 </div>
 
                 <!-- Combo Queridinhos (Destacado) -->
@@ -249,16 +249,40 @@
         </div>
     </section>
 
-    <!-- CTA FINAL -->
-    <section class="cta-final bg-light">
-        <div class="container center-text">
-            <h2 class="animate-up">Ainda tem dúvidas?</h2>
-            <p class="animate-up">Fale com nosso suporte no WhatsApp!</p>
-            <a href="https://random.lailla.io/75f955e8-638c-4c9d-b461-2e3ccaa00794?text=Olá" class="btn btn-whatsapp margin-top animate-up delay-1" target="_blank">
-                <i class="ph-fill ph-whatsapp-logo"></i> CHAMAR NO WHATSAPP
-            </a>
+    <!-- MODAL OFERTA EXCLUSIVA -->
+    <div id="ofertaModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-badge">⚠️ ESPERE! NÃO FECHE ESSA PÁGINA</div>
+            <h2>Leve o <span class="text-green">Acervo Completo</span> por apenas + R$ 4,90!</h2>
+            
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <img src="https://resumiapedagogia.com.br/teoricosv18/imagens/combo-queridinhos.webp?v=2" alt="Combo Completo">
+                </div>
+                <div class="modal-info">
+                    <p>Você clicou no plano básico, mas HOJE (<strong><span class="current-date">10/07/2026</span></strong>), você tem a chance única de levar <strong>TUDO</strong> que o plano avançado oferece por um valor quase simbólico!</p>
+                    
+                    <ul class="modal-features">
+                        <li><i class="ph-fill ph-check-circle text-green"></i> Teóricos e Pensadores da Educação (74 pgs)</li>
+                        <li><i class="ph-fill ph-check-circle text-green"></i> Conhecimentos Pedagógicos</li>
+                        <li><i class="ph-fill ph-check-circle text-green"></i> Guia Esquematizado da LDB Atualizada</li>
+                        <li><i class="ph-fill ph-check-circle text-green"></i> BÔNUS: Mapas de Português — Morfologia</li>
+                        <li><i class="ph-fill ph-check-circle text-green"></i> Atualização gratuita por 1 ano</li>
+                    </ul>
+                    
+                    <div class="modal-price">
+                        De R$ 24,90 por apenas <br>
+                        <strong>R$ 14,90</strong>
+                    </div>
+                    
+                    <!-- Substituir o link do href pelo link de checkout de 14,90 do usuário futuramente -->
+                    <a href="#" class="btn btn-green btn-large btn-pulse">EU QUERO O ACERVO COMPLETO POR R$ 14,90</a>
+                    <a href="#" id="continueBasicBtn" class="link-recusa">Não, obrigado. Quero apenas o básico por R$ 10.</a>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- FOOTER -->
     <footer>
