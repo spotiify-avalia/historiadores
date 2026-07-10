@@ -1,8 +1,8 @@
 :root {
     /* Colors - Lighter, softer background */
     --white: #FFFFFF;
-    --blue: #2F6BFF;
-    --blue-dark: #1E4EBF;
+    --primary: #F2C94C;
+    --primary-dark: #DFA918;
     --green: #11A84D; /* A vibrant strong green for CTA */
     --green-dark: #0D823A;
     --light-bg: #F5F5F0; /* Lighter, softer neutral tone */
@@ -80,7 +80,7 @@ body {
 .align-center { align-items: center; }
 .center-text { text-align: center; }
 .bg-light { background-color: var(--white); } /* Sections contrast with light-bg */
-.text-blue { color: var(--blue); }
+.text-primary { color: var(--primary); }
 .text-green { color: var(--green); }
 .margin-top { margin-top: 32px; }
 
@@ -106,8 +106,8 @@ p { color: var(--text-muted); margin-bottom: 24px; }
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--primary);
+    color: var(--text-main);
     font-weight: 700;
     text-decoration: none;
     padding: 18px 32px;
@@ -132,7 +132,7 @@ p { color: var(--text-muted); margin-bottom: 24px; }
     padding: 22px 40px;
 }
 
-.btn-green { background-color: var(--green); }
+.btn-green { background-color: var(--green); color: var(--white); }
 .btn-green:hover { background-color: var(--green-dark); box-shadow: var(--shadow-glow); }
 
 .btn-outline {
@@ -175,7 +175,7 @@ p { color: var(--text-muted); margin-bottom: 24px; }
     display: inline-block;
     padding: 8px 16px;
     background-color: rgba(47, 107, 255, 0.1);
-    color: var(--blue);
+    color: var(--primary);
     border-radius: 100px;
     font-weight: 700;
     font-size: 0.9rem;
@@ -183,7 +183,7 @@ p { color: var(--text-muted); margin-bottom: 24px; }
 }
 
 .hero-title b {
-    color: var(--blue);
+    color: var(--primary);
 }
 
 .hero-support {
@@ -192,7 +192,7 @@ p { color: var(--text-muted); margin-bottom: 24px; }
     color: var(--text-main);
     background: rgba(47,107,255,0.05);
     padding: 16px;
-    border-left: 4px solid var(--blue);
+    border-left: 4px solid var(--primary);
     border-radius: 4px;
     margin-bottom: 24px;
 }
@@ -277,7 +277,7 @@ p { color: var(--text-muted); margin-bottom: 24px; }
 .card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
-    border-color: var(--blue);
+    border-color: var(--primary);
 }
 
 .card-icon-img {
